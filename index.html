@@ -549,12 +549,12 @@
                     form.reset();
                     localStorage.removeItem(KEY);
                 } else {
-                    throw new Error('خطا در ارسال به دیسکورد');
+                    throw new Error('خطا در ارسال به دیسکورد مطمعن باشید فیلتر شکن شما روشن باشد');
                 }
 
             } catch (err) {
-                console.error('خطا در ارسال فرم:', err);
-                alert('⚠️ خطا در ارسال فرم. لطفاً دوباره تلاش کنید.');
+                console.error('خطا در ارسال فرم مطمعن باشید فیلتر شکن شما روشن باشد:', err);
+                alert('⚠️ خطا در ارسال فرم. لطفاً دوباره تلاش کنید مطمعن باشید فیلتر شکن شما روشن باشد.');
             } finally {
                 submitText.textContent = 'ارسال فرم';
                 submitIcon.innerHTML = '<i class="fas fa-paper-plane"></i>';
